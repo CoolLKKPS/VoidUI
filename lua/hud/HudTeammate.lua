@@ -6,6 +6,8 @@ if VoidUI.options.teammate_panels then
 		self._teammates_panel = teammates_panel
 		self._main_scale = VoidUI.options.hud_main_scale
 		self._mate_scale = VoidUI.options.hud_mate_scale
+		local is_chinese = SystemInfo:language():key() == Idstring("schinese"):key()
+		local alt_font = is_chinese and tweak_data.menu.pd2_medium_font or tweak_data.menu.medium_font_no_outline
 
 		self._w = self._main_player and 145 * self._main_scale or 111 * self._mate_scale
 		self._bg_h = self._main_player and 120 * self._main_scale or 92 * self._mate_scale
@@ -718,7 +720,7 @@ if VoidUI.options.teammate_panels then
 			vertical = "bottom",
 			align = self._main_player and "right" or "left",
 			font_size = 19 * self._mate_scale,
-			font = tweak_data.menu.medium_font_no_outline
+			font = alt_font
 		})
 		interact_text:set_bottom(self._main_player and health_panel:top() - self._equipment_panel_h or health_panel:top() - 1)
 		interact_text:set_x(self._main_player and 0 or 9 * self._mate_scale)
@@ -730,7 +732,7 @@ if VoidUI.options.teammate_panels then
 			vertical = "bottom",
 			align = self._main_player and "right" or "left",
 			font_size = 19 * self._mate_scale,
-			font = tweak_data.menu.medium_font_no_outline
+			font = alt_font
 		})
 		interact_text_shadow:set_position(interact_text:x() + 1, interact_text:y() + 1)
 		local interact_bar = interact_panel:bitmap({
@@ -751,7 +753,7 @@ if VoidUI.options.teammate_panels then
 			text = "3s",
 			vertical = "bottom",
 			align = "center",
-			font = tweak_data.menu.medium_font_no_outline,
+			font = alt_font,
 			layer = 6,
 			color = Color.white
 		})	
