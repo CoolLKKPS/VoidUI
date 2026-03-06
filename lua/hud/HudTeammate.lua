@@ -753,7 +753,7 @@ if VoidUI.options.teammate_panels then
 			text = "3s",
 			vertical = "bottom",
 			align = "center",
-			font = tweak_data.menu.medium_font_no_outline,
+			font = alt_font,
 			layer = 6,
 			color = Color.white
 		})	
@@ -2031,7 +2031,7 @@ if VoidUI.options.teammate_panels then
 				align = "left",
 				font_size = prev_size,
 				rotation = 360,
-				font = tweak_data.menu.medium_font_no_outline
+				font = alt_font
 			})
 			text:set_bottom(self._custom_player_panel:child("health_panel"):top() - 1)
 			text:set_x(9 * self._mate_scale)
