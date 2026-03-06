@@ -166,7 +166,7 @@ if VoidUI.options.teammate_panels then
 			text = "100",
 			vertical = "bottom",
 			align = "center",
-			font = alt_font,
+			font = tweak_data.menu.medium_font_no_outline,
 			layer = 5,
 			color = Color.white
 		})	
@@ -180,7 +180,7 @@ if VoidUI.options.teammate_panels then
 			text = "x0",
 			vertical = "top",
 			align = "center",
-			font = alt_font,
+			font = tweak_data.menu.medium_font_no_outline,
 			layer = 5,
 			color = Color.white,
 		})	
@@ -195,7 +195,7 @@ if VoidUI.options.teammate_panels then
 			text = "75%",
 			vertical = "top",
 			align = "center",
-			font = alt_font,
+			font = tweak_data.menu.medium_font_no_outline,
 			layer = 5,
 			color = Color.white,
 			visible = false
@@ -240,7 +240,7 @@ if VoidUI.options.teammate_panels then
 			text = "",
 			vertical = "bottom",
 			align = "center",
-			font = alt_font,
+			font = tweak_data.menu.medium_font_no_outline,
 			layer = 5,
 			color = Color.white
 		})	
@@ -263,7 +263,7 @@ if VoidUI.options.teammate_panels then
 			text = "15",
 			vertical = "bottom",
 			align = "center",
-			font = alt_font,
+			font = tweak_data.menu.medium_font_no_outline,
 			layer = 9,
 			color = Color.white
 		})
@@ -501,7 +501,7 @@ if VoidUI.options.teammate_panels then
 			text = "",
 			vertical = "bottom",
 			align = "right",
-			font = alt_font,
+			font = tweak_data.menu.medium_font_no_outline,
 			layer = 3,
 			alpha = 1,
 		})
@@ -546,7 +546,7 @@ if VoidUI.options.teammate_panels then
 			text = "x0",
 			vertical = "bottom",
 			align = "right",
-			font = alt_font,
+			font = tweak_data.menu.medium_font_no_outline,
 			layer = 3,
 			alpha = 1,
 		})
@@ -603,7 +603,7 @@ if VoidUI.options.teammate_panels then
 			text = "",
 			vertical = "bottom",
 			align = "right",
-			font = alt_font,
+			font = tweak_data.menu.medium_font_no_outline,
 			layer = 4,
 			alpha = 1,
 		})	
@@ -616,7 +616,7 @@ if VoidUI.options.teammate_panels then
 			text = "",
 			vertical = "top",
 			align = "right",
-			font = alt_font,
+			font = tweak_data.menu.medium_font_no_outline,
 			layer = 4,
 			alpha = 1,
 		})	
@@ -753,7 +753,7 @@ if VoidUI.options.teammate_panels then
 			text = "3s",
 			vertical = "bottom",
 			align = "center",
-			font = alt_font,
+			font = tweak_data.menu.medium_font_no_outline,
 			layer = 6,
 			color = Color.white
 		})	
@@ -1770,7 +1770,7 @@ if VoidUI.options.teammate_panels then
 			w = self._health_value,
 			h = self._health_value,
 			font_size = self._health_value / 1.7,
-			font = alt_font,
+			font = tweak_data.menu.medium_font_no_outline,
 			layer = 3,
 			text = "75%",
 			vertical = "bottom",
@@ -1878,7 +1878,7 @@ if VoidUI.options.teammate_panels then
 			name = "amount",
 			visible = vis_at_start,
 			text = "x0",
-			font = alt_font,
+			font = tweak_data.menu.medium_font_no_outline,
 			vertical = "bottom",
 			align = "right",
 			layer = 2,
@@ -2031,7 +2031,7 @@ if VoidUI.options.teammate_panels then
 				align = "left",
 				font_size = prev_size,
 				rotation = 360,
-				font = alt_font
+				font = tweak_data.menu.medium_font_no_outline
 			})
 			text:set_bottom(self._custom_player_panel:child("health_panel"):top() - 1)
 			text:set_x(9 * self._mate_scale)
